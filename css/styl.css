@@ -1,9 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: lightblue;
 }
-
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
 h1 {
   color: navy;
   margin-left: 20px;
@@ -28,7 +35,7 @@ li a {
   color: white;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  text-decoration:none;
 }
 
 li a:hover:not(.active) {
