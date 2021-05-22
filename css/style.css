@@ -1,1 +1,19 @@
-body {background-color:rgb(100,100,100,0.5);}
+body{background-color:rgb(100,100,100,0.5);
+	margin-bottom: 100px;
+	margin-right:50px;
+	margin-left: 50px;
+}
+
+ .product-image { padding-right:25px
+ }
+ h1 {
+  text-align: center;
+  border-bottom:10px groove rgb(250,250,250);
+}
+div.product-details{padding:20px;}
+div.column-labels{
+  visibility: hidden;
+}
+p.product-description{
+	 
+}
