@@ -4,6 +4,8 @@
 <title>Login</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../css/styl.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
 input[type=text], input[type=password] {
   width: 100%;
@@ -56,13 +58,15 @@ span.psw {
 </style>
 </head>
 <body>
-<div class="header">
-<h2>Login</h2>
+<div class="container-fluid">
+<div class="header" style="background: grey">
+<img src="../media/oglogo.png" width="64" height="64" alt="logo" style="border-radius:50%"/>
+	<h1>Yellow Hat</h1>
 	</div>
 <div id="id01" class="login">
   
   <form class="login-content animate" action="/action_page.php" method="post">
-    <div class="imgcontainer">
+    <div class="imgcontainer" style="background: #C7C7C7">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="../media/user.png" alt="Avatar" class="avatar">
     </div>
@@ -81,11 +85,11 @@ span.psw {
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
-      <button type="button" class="backbtn">Back to Home</button>
+		<a href="home.html"><button type="button" class="backbtn">Back to Home</button></a>
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
   </form>
-</div>
+  </div></div>
 </script>
 
 </body>
