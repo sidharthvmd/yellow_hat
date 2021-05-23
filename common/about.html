@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="../css/styl.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome->">
+    <style>
+    	#contact p
+		{
+			font-size: 36px;
+			font-weight: 600px;
+			margin-bottom: 10px;
+		}
+		.iconss img
+		{
+			width: 48px;
+			transition: 0.5s;
+		}
+		.iconss a:hover img
+		{
+			transform:translateY(-10px);
+		}
+    </style>
 </head>
 <body>    
 	<div class="container-fluid">
@@ -15,10 +33,10 @@
         </div>
         <!--Navigation bar-->
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
-            <li style="float:right"><a href="#about" class="active2">Login</a></li>
+            <li><a href="about.html">About</a></li>
+            <li style="float:right"><a href="login.html" class="active2">Login</a></li>
             <li style="float:right"><a href="register.html" class="active">Register</a></li>
         </ul>
         <div style="background:url()"><!--flagged unwanted, check if someone wants this-->
@@ -43,6 +61,22 @@
                 </h3>
             </div>
         </div>
+    <a name="con"></a>
+    <center>
+	<section id="contact">
+		<div class="row">
+			<div class="container text-center" style="background: white;padding-top: 1px">
+				<p class="text-uppercase">Social Media</p>
+				<div class="iconss">
+					<a href="#"><img src="../media/instagram.png"></a>
+					<a href="#"><img src="../media/facebook.png"></a>
+					<a href="#"><img src="../media/linkedin.png"></a>
+
+				</div>
+			</div>
+		</div>
+	</section>
+        </center>
         <div class="footer">
             <cite>
  We're always adding to our Literary Classics searching for materials we know the community will apprechiate.Our team is available to make suggestions and help you find the perfect guidelines from our collection.

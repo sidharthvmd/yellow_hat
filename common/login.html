@@ -4,7 +4,8 @@
 <title>Login</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../css/styl.css">
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
 input[type=text], input[type=password] {
@@ -57,30 +58,36 @@ span.psw {
 }
 </style>
 </head>
-<body>
+<body style="background:url(../media/bg_home.jpg)">
 <div class="container-fluid">
-<div class="header" style="background: grey">
+<div class="header" style="background-color: #485461;
+background-image: linear-gradient(315deg, #485461 0%, #28313b 74%)">
 <img src="../media/oglogo.png" width="128" height="128" alt="logo" style="border-radius:50%"/>
 	</div>
 <div id="id01" class="login">
   
   <form class="login-content animate" action="/action_page.php" method="post">
-    <div class="imgcontainer" >
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="../media/user.png" alt="Avatar" class="avatar">
+    <center><div class="imgcontainer" style="background:white;border-radius:75%;width:128px;height:128px;" >
+      <img class="img-rounded" src="../media/user.png" alt="Avatar" class="avatar" width=128px height=128px style="padding: 4px;">
     </div>
+    <div class="container"style="background-color: #485461;
+background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);border=30%">
+      <form >
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+    </div>
+    <br>
+    <center><div class="input-group">
+      <button type="button" class="btn btn-default">Login</button>
+    </div></center>
+  </form>
+  <br>
 
-    <div class="container"style="background: #000000">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
